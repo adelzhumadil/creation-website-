@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Викторина</title>
+	<style>
+        body {
+        background-color: #000000;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        }
+		.question {
+			border: 2px solid green;
+			padding: 10px;
+			margin-bottom: 20px;
+            border-radius: 10px;
+            width: 700px;
+		}
+        #submit {
+        background-image: linear-gradient(to bottom, #59e906, #79ce0a);
+        border: none;
+        border-radius: 25px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        transition: all 0.3s ease 0s;
+        
+        }
+        #submit:hover {
+        background-color: #ff0000;
+        }
+        .question-container {
+        text-align: center;
+        border: 2px solid green;
+		padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        width: 700px;
+        margin-top: 10px;
+        }
+        .p {
+            text-align: center
+        }
+        .button {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;           
+        }
+
+	</style>
+    <a href="index.html">
+        <img src="logo.png" alt="Логотип сайта" style="width: 100px; height: 80px;">
+    </a>
+</head>
+<body>
+	<div class="question-container">
+		<p>1. К какой физической нагрузке относится "гуд монинг"?</p>
+		<input type="radio" name="question1" value="crossfit">Кроссфит<br>
+		<input type="radio" name="question1" value="bodybuilding">Бодибилдинг<br>
+		<input type="radio" name="question1" value="yoga">Йога<br>
+	</div>
+	<div class="question-container">
+		<p>2. Откуда упражнение "Кластер"?</p>
+		<input type="radio" name="question2" value="crossfit">Кроссфит<br>
+		<input type="radio" name="question2" value="bodybuilding">Бодибилдинг<br>
+		<input type="radio" name="question2" value="yoga">Йога<br>
+	</div>
+	<div class="question-container">
+		<p>3. Откуда упражнение "Уткакасана"?</p>
+		<input type="radio" name="question3" value="crossfit">Кроссфит<br>
+		<input type="radio" name="question3" value="bodybuilding">Бодибилдинг<br>
+		<input type="radio" name="question3" value="yoga">Йога<br>
+	</div>
+	<div class="question-container">
+		<p>4. Откуда упражнение "Гакк-приседания"?</p>
+		<input type="radio" name="question4" value="crossfit">Кроссфит<br>
+		<input type="radio" name="question4" value="bodybuilding">Бодибилдинг<br>
+		<input type="radio" name="question4" value="yoga">Йога<br>
+	</div>
+	<div class="question-container">
+		<p>5. Откуда упражнение "Шраги"?</p>
+		<input type="radio" name="question5" value="crossfit">Кроссфит<br>
+		<input type="radio" name="question5" value="bodybuilding">Бодибилдинг<br>
+		<input type="radio" name="question5" value="yoga">Йога<br>
+	</div>
+	<div class="question-container">
+		<p>5. Откуда упражнение "Уттхита"?</p>
+		<input type="radio" name="question6" value="crossfit">Кроссфит<br>
+		<input type="radio" name="question6" value="bodybuilding">Бодибилдинг<br>
+		<input type="radio" name="question6" value="yoga">Йога<br>
+	</div>
+	<button onclick="checkAnswers()">Завершить</button>
+
+	<script>
+		function checkAnswers() {
+			var correctAnswers = 0;
+			var answer1 = document.querySelector('input[name="question1"]:checked').value;
+			var answer2 = document.querySelector('input[name="question2"]:checked').value;
+			var answer3 = document.querySelector('input[name="question3"]:checked').value;
+			var answer4 = document.querySelector('input[name="question4"]:checked').value;
+			var answer5 = document.querySelector('input[name="question5"]:checked').value;
+			var answer6 = document.querySelector('input[name="question6"]:checked').value;
+
+			if (answer1 === "crossfit") {
+				correctAnswers++;
+				document.querySelector('input[name="question1"][value="crossfit"]').parentNode.style.color = "#00f808";
+			} else {
+				document.querySelector('input[name="question1"][value="crossfit"]').parentNode.style.color = "#ff0000";
+			}
+
+			if (answer2 === "crossfit") {
+				correctAnswers++;
+				document.querySelector('input[name="question2"][value="crossfit"]').parentNode.style.color = "#00f808";
+			} else {
+				document.querySelector('input[name="question2"][value="crossfit"]').parentNode.style.color = "#ff0000";
+			}
+
+			if (answer3 === "yoga") {
+				correctAnswers++;
+				document.querySelector('input[name="question3"][value="yoga"]').parentNode.style.color = "#00f808";
+			} else {
+				document.querySelector('input[name="question3"][value="yoga"]').parentNode.style.color = "#ff0000";
+			}
+
+			if (answer4 === "bodybuilding") {
+				correctAnswers++;
+				document.querySelector('input[name="question4"][value="bodybuilding"]').parentNode.style.color = "#00f808";
+			} else {
+				document.querySelector('input[name="question4"][value="bodybuilding"]').parentNode.style.color = "#ff0000";
+			}
+
+			if (answer5 === "bodybuilding") {
+				correctAnswers++;
+				document.querySelector('input[name="question5"][value="bodybuilding"]').parentNode.style.color = "#00f808";
+			} else {
+				document.querySelector('input[name="question5"][value="bodybuilding"]').parentNode.style.color = "#ff0000";
+			}
+
+			if (answer6 === "yoga") {
+				correctAnswers++;
+				document.querySelector('input[name="question6"][value="yoga"]').parentNode.style.color = "#00f808";
+			} else {
+				document.querySelector('input[name="question6"][value="yoga"]').parentNode.style.color = "#ff0000";
+			}
+
+
+			alert("Количество правильных ответов: " + correctAnswers);
+		}
+	</script>
+</body>
+</html>
