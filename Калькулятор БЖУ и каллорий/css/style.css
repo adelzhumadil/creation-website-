@@ -1,0 +1,177 @@
+.logo {
+    width: 100px;
+    height: 65px;
+}
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00c521;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+}
+/* стили для формы */
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #6bc208;
+    border-radius: 10px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+          
+}
+input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #60af06;
+    margin-bottom: 20px;
+    width: 70%;
+    background-color: rgb(233, 233, 233);
+}
+
+input[type='radio'] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background: linear-gradient(to right, #486d05, #2a8805);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+    transform: scale(1.02);
+    background: linear-gradient(to right, #486d05 10%, #2a8805 90%);
+}
+
+/* стили для результата */
+#result {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+}
+h2 {
+    margin-bottom: 10px;
+}
+
+/* стили для таблицы с БЖУ и калориями */
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    text-align: left;
+}
+header {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    z-index: 9998;
+}
+
+nav ul.dropdown-menu {
+    display: block;
+    position: relative;
+}
+
+nav ul.dropdown-menu li {
+    display: block;
+    margin: 0;
+}
+
+nav ul.dropdown-menu li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul.dropdown-menu li a:hover {
+    background-color: #ccc;
+    color: #000000;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+  
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+}

@@ -1,0 +1,8 @@
+.exercise {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div:not(.exercise) {
+    margin: 10px;
+}
