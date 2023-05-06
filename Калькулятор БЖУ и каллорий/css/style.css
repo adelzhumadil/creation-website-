@@ -1,7 +1,13 @@
 .logo {
-    width: 100px;
-    height: 65px;
+    width: 80px;
+    height: 70px;
 }
+
+img {
+    width: 80px;
+    height: 70px;
+}
+
 select {
     padding: 10px;
     border-radius: 5px;
@@ -22,9 +28,13 @@ form {
 label{
     display: block;
     margin-bottom: 10px;
-    font-weight: bold;
-          
+    font-weight: bold;   
 }
+
+label[for="activity"] {
+    margin-top: 10px;
+}
+
 input[type="number"] {
     padding: 10px;
     border-radius: 5px;
@@ -40,6 +50,7 @@ input[type='radio'] {
 }
 
 input[type="submit"] {
+    margin-top: 10px;
     padding: 10px 20px;
     font-size: 18px;
     background: linear-gradient(to right, #486d05, #2a8805);
@@ -62,7 +73,6 @@ input[type="submit"]:hover {
 h1 {
     text-align: center;
     font-size: 40px;
-    margin-top: 150px;
 }
 h2 {
     margin-bottom: 10px;
@@ -91,20 +101,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    height: 90px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 1;
 }
-
+main {
+    margin-top: 160px;
+}
 .menu-toggle {
     font-size: 24px;
     cursor: pointer;
-}
-
-.logo {
-    font-size: 24px;
+    display: none;
 }
 
 nav ul {
@@ -161,11 +171,6 @@ nav ul.dropdown-menu li a {
 nav ul.dropdown-menu li a:hover {
     background-color: #ccc;
     color: #000000;
-}
-
-
-.menu-toggle {
-    display: none;
 }
   
 nav {
