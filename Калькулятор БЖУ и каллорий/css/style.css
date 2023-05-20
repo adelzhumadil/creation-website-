@@ -1,11 +1,11 @@
 .logo {
-    width: 80px;
-    height: 70px;
+    width: 150px;
+    height: 130px;
 }
 
 img {
-    width: 80px;
-    height: 70px;
+    width: 150px;
+    height: 130px;
 }
 
 select {
@@ -18,7 +18,7 @@ select {
 }
 /* стили для формы */
 form {
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
     padding: 20px;
     border: 1px solid #6bc208;
@@ -112,7 +112,7 @@ main {
     margin-top: 160px;
 }
 .menu-toggle {
-    font-size: 24px;
+    font-size: 25px;
     cursor: pointer;
     display: none;
 }
@@ -179,4 +179,125 @@ nav {
     position: static;
     background-color: transparent;
     padding: 0;
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        width: 130px;
+        height: 110px;
+    }
+    img {
+        width: 130px;
+        height: 110px;
+    }
+    select {
+        margin-bottom: 15px;
+    }
+    form {
+        max-width: 550px;
+    }
+    input[type="submit"] {
+        font-size: 15px;
+    }
+    #result {
+        margin-top: 15px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    header {
+        height: 75px;
+    }
+    main {
+        margin-top: 145px;
+    }
+    .menu-toggle {
+        font-size: 20px;
+    }
+    nav ul li {
+        margin-left: 16px;
+    }
+    nav {
+        top: 55px;
+    }
+}
+@media (max-width: 720px) {
+    .logo {
+        width: 110px;
+        height: 90px;
+    }
+    img {
+        width: 110px;
+        height: 90px;
+    }
+    select {
+        margin-bottom: 12px;
+    }
+    form {
+        max-width: 400px;
+    }
+    input[type="submit"] {
+        font-size: 12px;
+    }
+    #result {
+        margin-top: 12px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    header {
+        height: 60px;
+    }
+    main {
+        margin-top: 130px;
+    }
+    .menu-toggle {
+        font-size: 15px;
+    }
+    nav ul li {
+        margin-left: 12px;
+    }
+    nav {
+        top: 40px;
+    }
+}
+@media (max-width: 360px) {
+    .logo {
+        width: 90px;
+        height: 70px;
+    }
+    img {
+        width: 90px;
+        height: 70px;
+    }
+    select {
+        margin-bottom: 9px;
+    }
+    form {
+        max-width: 250px;
+    }
+    input[type="submit"] {
+        font-size: 9px;
+    }
+    #result {
+        margin-top: 9px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    header {
+        height: 45px;
+    }
+    main {
+        margin-top: 115px;
+    }
+    .menu-toggle {
+        font-size: 10px;
+    }
+    nav ul li {
+        margin-left: 8px;
+    }
+    nav {
+        top: 25px;
+    }
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Где больше/меньше?</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/where_is_it.css">
+	<link rel="stylesheet" href="/css/general.css">
+</head>
+<body>
+<header>
+    <a href="/html/index.html">
+        <img src="/image/арнольд.png" alt="Логотип сайта">
+    </a>
+</header>
+<main>
+	<div class="question-container">
+		<p>1. Что из этого наиболее калорийное?</p>
+		<input type="radio" name="question1" value="zefir">Зефир<br>
+		<input type="radio" name="question1" value="cheese">Твороженный сыр<br>
+		<input type="radio" name="question1" value="chicken_breast">Куриная грудка<br>
+	</div>
+	<div class="question-container">
+		<p>2. В каком продукте больше белков?</p>
+		<input type="radio" name="question2" value="milk">Молоко<br>
+		<input type="radio" name="question2" value="beans">Бобы<br>
+		<input type="radio" name="question2" value="cottage_cheese">Творог<br>
+	</div>
+	<div class="question-container">
+		<p>3. В каком продукте больше жиров?</p>
+		<input type="radio" name="question3" value="nuts">Орехи<br>
+		<input type="radio" name="question3" value="sausages">Колбасы<br>
+		<input type="radio" name="question3" value="olive_oil">Оливковое масло<br>
+	</div>
+	<div class="question-container">
+		<p>4. В каком продукте больше углеводов?</p>
+		<input type="radio" name="question4" value="zefir">Зефир<br>
+		<input type="radio" name="question4" value="potato">Картофель<br>
+		<input type="radio" name="question4" value="sugar">Сахар<br>
+	</div>
+	<div class="question-container">
+		<p>5. Что из этого менее калорийное?</p>
+		<input type="radio" name="question5" value="water">Вода<br>
+		<input type="radio" name="question5" value="celery">Сельдерей<br>
+		<input type="radio" name="question5" value="carrot">Морковь<br>
+	</div>
+	<div class="button">
+		<button onclick="checkAnswers()">Завершить</button>
+	</div>
+</main>
+	<script src="/js/more_callories.js"></script>
+</body>
+</html>

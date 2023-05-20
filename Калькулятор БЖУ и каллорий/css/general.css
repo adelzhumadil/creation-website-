@@ -10,3 +10,19 @@ body {
 .p {
     text-align: center
 }
+
+@media (max-width: 1024px) {
+    .p2 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 720px) {
+    .p2 {
+        font-size: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .p2 {
+        font-size: 8px;
+    }
+}

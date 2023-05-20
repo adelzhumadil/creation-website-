@@ -1,32 +1,37 @@
-#popup {
-    position: fixed;
-    top: 0;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.logo {
+    position: absolute;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
+    top: 0;
+}
+.popup {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#popup-content {
+.popup-content {
     padding: 20px;
     border: 2px solid #00c521;
     text-align: center;
     border-radius: 5px;
 }
 
-#popup-content img {
+.quizzes {
     width: 100%;
     max-width: 400px;
 }
 
-#popup-content p {
+p {
     font-size: 18px;
     margin: 20px 0;
 }
 
-#popup-content a {
+.quizze {
     display: block;
     background-color: #00c521;
     color: #000000;
@@ -34,8 +39,64 @@
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    margin-bottom: 7px;
 }
-img {
-    width: 150px; 
+.quizze:last-child {
+    margin-bottom: 0;
+}
+.logo {
+    width: 160px; 
     height: 130px;
+}
+
+@media (max-width: 1024px) {
+    .quizzes {
+        max-width: 250px;
+    }
+    .quizze {
+        font-size: 13px;
+        padding: 7px 17px;
+        margin-bottom: 5px;
+    }
+    .popup-content {
+        padding: 15px;
+    }
+    p {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+}
+@media (max-width: 720px) {
+    .quizzes {
+        max-width: 100px;
+    }
+    .quizze {
+        font-size: 10px;
+        padding: 4px 14px;
+        margin-bottom: 3px;
+    }
+    .popup-content {
+        padding: 10px;
+    }
+    p {
+        font-size: 10px;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 360px) {
+    .quizzes {
+        max-width: 70px;
+    }
+    .quizze {
+        font-size: 7px;
+        padding: 1px 11px;
+        margin-bottom: 1px;
+    }
+    .popup-content {
+        padding: 5px;
+    }
+    p {
+        font-size: 7px;
+        margin: 5px 0;
+    }
 }

@@ -10,3 +10,30 @@ img {
     width: 200px;
     height: 150px;
 }
+@media (max-width: 1024px) {
+    img {
+        width: 170px;
+        height: 120px;
+    }
+    div:not(.exercise) {
+        margin: 7px;
+    }
+}
+@media (max-width: 720px) {
+    img {
+        width: 140px;
+        height: 90px;
+    }
+    div:not(.exercise) {
+        margin: 5px;
+    }
+}
+@media (max-width: 360px) {
+    img {
+        width: 110px;
+        height: 60px;
+    }
+    div:not(.exercise) {
+        margin: 3px;
+    }
+}

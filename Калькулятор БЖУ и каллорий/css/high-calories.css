@@ -8,3 +8,27 @@ div {
 p{
     font-size: 20px;
 }
+@media (max-width: 1024px) {
+    div {
+        width: 500px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 720px) {
+    div {
+        width: 300px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 360px) {
+    div {
+        width: 100px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
